@@ -1,0 +1,767 @@
+autostart = False
+version = 0.8.4
+[127.0.0.1:7202]
+    workingdir = C:\Users\lenovo\AppData\Local\Temp
+    udp = 10201
+    [[3640]]
+        image = D:\GNS3\IOS\C3640-JK.BIN
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER HPC-1]]
+        model = 3640
+        console = 2111
+        aux = 2511
+        slot0 = NM-1FE-TX
+        f0/0 = SW4 f0/4
+        symbol = computer
+        x = -211.852180966
+        y = 350.043157873
+        z = 1.0
+        hx = 2.0
+        hy = 59.0
+    [[ROUTER SPC-1]]
+        model = 3640
+        console = 2110
+        aux = 2510
+        slot0 = NM-1FE-TX
+        f0/0 = SW2 f0/4
+        symbol = computer
+        x = -417.491278237
+        y = -333.869624493
+        z = 1.0
+    [[ROUTER MPC-2]]
+        model = 3640
+        console = 2112
+        aux = 2512
+        cnfg = configs\MPC-2.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SW2 f0/11
+        symbol = computer
+        x = -584.015639749
+        y = 202.966014835
+        z = 1.0
+    [[ROUTER APC-1]]
+        model = 3640
+        console = 2109
+        aux = 2509
+        cnfg = configs\APC-1.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SW1 f0/4
+        symbol = computer
+        x = 450.0
+        y = -164.0
+        z = 1.0
+        hx = 3.5
+        hy = 55.0
+[127.0.0.1:7203]
+    workingdir = C:\Users\lenovo\AppData\Local\Temp
+    udp = 10301
+    [[3640]]
+        image = D:\GNS3\IOS\C3640-JK.BIN
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER EPC-4]]
+        model = 3640
+        console = 2113
+        aux = 2513
+        cnfg = configs\EPC-4.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SW3 f0/4
+        symbol = computer
+        x = 490.921955074
+        y = 195.310375927
+        z = 1.0
+        hx = 2.5
+        hy = 62.0
+    [[ROUTER HPC-2]]
+        model = 3640
+        console = 2116
+        aux = 2516
+        slot0 = NM-1FE-TX
+        f0/0 = SW4 f0/5
+        symbol = computer
+        x = -107.852180966
+        y = 354.043157873
+        z = 1.0
+        hx = 2.0
+        hy = 59.0
+    [[ROUTER SPC-2]]
+        model = 3640
+        console = 2115
+        aux = 2515
+        slot0 = NM-1FE-TX
+        f0/0 = SW2 f0/5
+        symbol = computer
+        x = -522.913684255
+        y = -313.292030511
+        z = 1.0
+    [[ROUTER SPC-6]]
+        model = 3640
+        console = 2114
+        aux = 2514
+        slot0 = NM-1FE-TX
+        f0/0 = SW2 f0/7
+        symbol = computer
+        x = -468.163458782
+        y = -22.0165416378
+        z = 1.0
+        hx = 1.5775939818
+        hy = 54.654737019
+[127.0.0.1:7200]
+    workingdir = C:\Users\lenovo\AppData\Local\Temp
+    udp = 10001
+    [[3640]]
+        image = D:\GNS3\IOS\C3640-JK.BIN
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER ISP-2]]
+        model = 3640
+        console = 2102
+        aux = 2502
+        cnfg = configs\ISP-2.cfg
+        slot0 = NM-4T
+        s0/1 = Int-router s0/1
+        slot1 = NM-1FE-TX
+        f1/0 = SW1 f0/7
+        x = 105.0
+        y = -382.844812036
+        z = 1.0
+        hx = 71.8530828553
+        hy = 2.02571434575
+    [[ROUTER ISP-3]]
+        model = 3640
+        console = 2103
+        aux = 2503
+        cnfg = configs\ISP-3.cfg
+        slot0 = NM-4T
+        s0/2 = Int-router s0/2
+        slot1 = NM-1FE-TX
+        f1/0 = SW1 f0/8
+        x = 367.0
+        y = -367.0
+        z = 1.0
+        hx = 67.5858648007
+        hy = 4.87052638214
+    [[ROUTER ISP-1]]
+        model = 3640
+        console = 2101
+        aux = 2501
+        cnfg = configs\ISP-1.cfg
+        slot0 = NM-4T
+        s0/0 = Int-router s0/0
+        slot1 = NM-1FE-TX
+        f1/0 = SW1 f0/6
+        x = -147.0
+        y = -375.0
+        z = 1.0
+        hx = -54.7410527643
+        hy = 6.29293240034
+    [[ROUTER IVR]]
+        model = 3640
+        console = 2104
+        aux = 2504
+        slot0 = NM-4T
+        slot1 = NM-1FE-TX
+        f1/0 = SW4 f0/6
+        cnfg = configs\IVR.cfg
+        x = 258.464662002
+        y = 346.471129042
+        z = 1.0
+        hx = 2.27593981803
+        hy = 40.1809023094
+[127.0.0.1:7201]
+    workingdir = C:\Users\lenovo\AppData\Local\Temp
+    udp = 10101
+    [[3640]]
+        image = D:\GNS3\IOS\C3640-JK.BIN
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER EPC-1]]
+        model = 3640
+        console = 2106
+        aux = 2506
+        cnfg = configs\EPC-1.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SW3 f0/7
+        symbol = computer
+        x = 782.921955074
+        y = 71.3103759272
+        z = 1.0
+        hx = 5.5
+        hy = 58.0
+    [[ROUTER EPC-2]]
+        model = 3640
+        console = 2108
+        aux = 2508
+        cnfg = configs\EPC-2.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SW3 f0/6
+        symbol = computer
+        x = 690.921955074
+        y = 118.310375927
+        z = 1.0
+        hx = 2.5
+        hy = 57.0
+    [[ROUTER EPC-3]]
+        model = 3640
+        console = 2107
+        aux = 2507
+        cnfg = configs\EPC-3.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SW3 f0/5
+        symbol = computer
+        x = 583.921955074
+        y = 152.310375927
+        z = 1.0
+        hx = 4.5
+        hy = 58.0
+    [[ROUTER APC-2]]
+        model = 3640
+        console = 2105
+        aux = 2505
+        cnfg = configs\APC-2.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SW1 f0/5
+        symbol = computer
+        x = 453.0
+        y = -74.0
+        z = 1.0
+        hx = 3.5
+        hy = 55.0
+[127.0.0.1:7206]
+    workingdir = C:\Users\lenovo\AppData\Local\Temp
+    udp = 10601
+    [[3640]]
+        image = D:\GNS3\IOS\C3640-JK.BIN
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER SW3]]
+        model = 3640
+        console = 2133
+        aux = 2533
+        cnfg = configs\SW3.cfg
+        slot0 = NM-16ESW
+        f0/0 = SW4 f0/0
+        f0/1 = SW1 f0/1
+        f0/2 = SW4 f0/2
+        f0/3 = SW1 f0/3
+        f0/4 = EPC-4 f0/0
+        f0/5 = EPC-3 f0/0
+        f0/6 = EPC-2 f0/0
+        f0/7 = EPC-1 f0/0
+        symbol = ethernet_switch
+        x = 287.0
+        y = 22.8653347947
+        z = 1.0
+        hx = 6.31037592721
+        hy = 9.13774443673
+    [[ROUTER SW4]]
+        model = 3640
+        console = 2132
+        aux = 2532
+        cnfg = configs\SW4.cfg
+        slot0 = NM-16ESW
+        f0/0 = SW3 f0/0
+        f0/1 = SW2 f0/1
+        f0/2 = SW3 f0/2
+        f0/3 = SW2 f0/3
+        f0/4 = HPC-1 f0/0
+        f0/5 = HPC-2 f0/0
+        f0/6 = IVR f1/0
+        symbol = ethernet_switch
+        x = 123.267218055
+        y = 176.865334795
+        z = 1.0
+        hx = 7.73278194541
+        hy = 7.71533841854
+[127.0.0.1:7204]
+    workingdir = C:\Users\lenovo\AppData\Local\Temp
+    udp = 10401
+    [[3640]]
+        image = D:\GNS3\IOS\C3640-JK.BIN
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER MPC-1]]
+        model = 3640
+        console = 2117
+        aux = 2517
+        cnfg = configs\MPC-1.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SW2 f0/10
+        symbol = computer
+        x = -488.438045767
+        y = 261.862255563
+        z = 1.0
+        hx = 1.0
+        hy = 58.0
+    [[ROUTER SPC-3]]
+        model = 3640
+        console = 2118
+        aux = 2518
+        slot0 = NM-1FE-TX
+        f0/0 = SW2 f0/6
+        symbol = computer
+        x = -630.068872218
+        y = -285.447218475
+        z = 1.0
+        hx = -1.80165416378
+        hy = -29.5775939818
+    [[ROUTER SPC-4]]
+        model = 3640
+        console = 2121
+        aux = 2521
+        slot0 = NM-1FE-TX
+        f0/0 = SW2 f0/9
+        symbol = computer
+        x = -628.112030091
+        y = -207.516090693
+        z = 1.0
+        hx = -0.956842127381
+        hy = 66.4563911828
+    [[ROUTER SPC-5]]
+        model = 3640
+        console = 2119
+        aux = 2519
+        slot0 = NM-1FE-TX
+        f0/0 = SW2 f0/8
+        symbol = computer
+        x = -559.629022673
+        y = -123.757594402
+        z = 1.0
+        hx = 4.4224060182
+        hy = 61.76676711
+[127.0.0.1:7205]
+    workingdir = C:\Users\lenovo\AppData\Local\Temp
+    udp = 10501
+    [[3640]]
+        image = D:\GNS3\IOS\C3640-JK.BIN
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER SW2]]
+        model = 3640
+        console = 2129
+        aux = 2529
+        cnfg = configs\SW2.cfg
+        slot0 = NM-16ESW
+        f0/0 = SW1 f0/0
+        f0/1 = SW4 f0/1
+        f0/2 = SW1 f0/2
+        f0/3 = SW4 f0/3
+        f0/4 = SPC-1 f0/0
+        f0/5 = SPC-2 f0/0
+        f0/6 = SPC-3 f0/0
+        f0/7 = SPC-6 f0/0
+        f0/8 = SPC-5 f0/0
+        f0/9 = SPC-4 f0/0
+        f0/10 = MPC-1 f0/0
+        f0/11 = MPC-2 f0/0
+        symbol = ethernet_switch
+        x = -70.0
+        y = 27.1346652053
+        z = 1.0
+        hx = 12.0
+        hy = 10.5601504549
+    [[ROUTER Int-router]]
+        model = 3640
+        console = 2156
+        aux = 2556
+        cnfg = configs\Int-router.cfg
+        slot0 = NM-4T
+        s0/0 = ISP-1 s0/0
+        s0/1 = ISP-2 s0/1
+        s0/2 = ISP-3 s0/2
+        x = 120.619849965
+        y = -608.031279497
+        z = 1.0
+    [[ROUTER SW1]]
+        model = 3640
+        console = 2128
+        aux = 2528
+        cnfg = configs\SW1.cfg
+        slot0 = NM-16ESW
+        f0/0 = SW2 f0/0
+        f0/1 = SW3 f0/1
+        f0/2 = SW2 f0/2
+        f0/3 = SW3 f0/3
+        f0/4 = APC-1 f0/0
+        f0/5 = APC-2 f0/0
+        f0/6 = ISP-1 f1/0
+        f0/7 = ISP-2 f1/0
+        f0/8 = ISP-3 f1/0
+        symbol = ethernet_switch
+        x = 110.0
+        y = -107.0
+        z = 1.0
+        hx = 10.5775939818
+        hy = 4.87052638214
+[GNS3-DATA]
+    configs = configs
+    m11 = 0.703034145811
+    m22 = 0.703034145811
+    [[NOTE 1]]
+        text = "vlan 5"
+        x = -861.978047028
+        y = -247.774586984
+    [[NOTE 2]]
+        text = "vlan 4"
+        x = -766.676843808
+        y = 245.80030133
+    [[NOTE 3]]
+        text = "vlan6"
+        x = 58.3186467461
+        y = 508.945414697
+    [[NOTE 4]]
+        text = "vlan 3"
+        x = 793.702558154
+        y = 267.136391603
+    [[NOTE 5]]
+        text = "vlan 2"
+        x = 635.815490134
+        y = -25.8792481456
+    [[NOTE 6]]
+        text = "DHCP Clients"
+        x = -2.84481203639
+        y = 479.074888314
+    [[NOTE 7]]
+        text = "10.0.0.0/24"
+        x = 241.809023094
+        y = 255.757143457
+    [[NOTE 8]]
+        text = "192.168.7.0/24"
+        x = -110.947669419
+        y = -200.835188384
+    [[NOTE 9]]
+        text = "f0/1"
+        x = -35.0751687186
+        y = 70.6827698397
+        interface = SW2 f0/1
+    [[NOTE 10]]
+        text = "f0/3"
+        x = 10.2244346716
+        y = 47.6096399189
+        interface = SW2 f0/3
+    [[NOTE 11]]
+        text = "192.168.6.0/24"
+        x = -21.8521809662
+        y = 338.543157873
+    [[NOTE 12]]
+        text = "Head"
+        x = 62.1478190338
+        y = 309.543157873
+    [[NOTE 13]]
+        text = "192.168.5.0/24"
+        x = -195.870526382
+        y = -464.034436109
+    [[NOTE 14]]
+        text = "Virtual IP: 170.10.12.100\nVirtual MAC: 0000.0c07.ac01"
+        x = 513.956842127
+        y = -453.922406018
+    [[NOTE 15]]
+        text = "HSRP"
+        x = 515.534436109
+        y = -484.922406018
+    [[NOTE 16]]
+        text = "DHCP Server"
+        x = 339.352631911
+        y = 355.393535061
+    [[NOTE 17]]
+        text = "ISP"
+        x = -191.603308328
+        y = -493.879248146
+    [[NOTE 18]]
+        text = "192.168.4.0/24"
+        x = -863.025714346
+        y = -296.076692093
+    [[NOTE 19]]
+        text = "Sales"
+        x = -863.025714346
+        y = -337.076692093
+    [[NOTE 20]]
+        text = "192.168.3.0/24"
+        x = -770.015639749
+        y = 217.466014835
+    [[NOTE 21]]
+        text = "Marketing"
+        x = -767.550075858
+        y = 186.888420854
+    [[NOTE 22]]
+        text = "192.168.2.0/24"
+        x = 715.189173128
+        y = 242.362255563
+    [[NOTE 23]]
+        text = "Employee"
+        x = 763.344361092
+        y = 214.095037509
+    [[NOTE 24]]
+        text = "192.168.1.0/24"
+        x = 548.0
+        y = -86.5
+    [[NOTE 25]]
+        text = "Accounts"
+        x = 573.0
+        y = -143.5
+    [[NOTE 26]]
+        text = "s0/1"
+        x = 33.6532812118
+        y = 61.9946649399
+        interface = Int-router s0/1
+    [[NOTE 27]]
+        text = "s0/0"
+        x = -51.113065781
+        y = 32.8559275775
+        interface = Int-router s0/0
+    [[NOTE 28]]
+        text = "s0/2"
+        x = 77.388110145
+        y = 28.3566429193
+        interface = Int-router s0/2
+    [[NOTE 29]]
+        text = "f0/0"
+        x = 2.9373656637
+        y = 49.7197301059
+        interface = SW3 f0/0
+    [[NOTE 30]]
+        text = "f0/2"
+        x = -53.3780603596
+        y = 22.068923655
+        interface = SW3 f0/2
+    [[NOTE 31]]
+        text = "f0/3"
+        x = -48.0701124604
+        y = -10.7430020213
+        interface = SW3 f0/3
+    [[NOTE 32]]
+        text = "f0/1"
+        x = -16.6642061997
+        y = -46.0672496647
+        interface = SW3 f0/1
+    [[NOTE 33]]
+        text = "f0/6"
+        x = 59.6153492942
+        y = 47.9131623067
+        interface = SW4 f0/6
+    [[NOTE 34]]
+        text = "f0/1"
+        x = -54.2219329535
+        y = -6.76057018008
+        interface = SW4 f0/1
+    [[NOTE 35]]
+        text = "f0/0"
+        x = 86.8146891819
+        y = -32.1160120957
+        interface = SW4 f0/0
+    [[NOTE 36]]
+        text = "f0/3"
+        x = -18.8791716906
+        y = -49.7473843557
+        interface = SW4 f0/3
+    [[NOTE 37]]
+        text = "f0/2"
+        x = 39.0336992678
+        y = -51.2323824375
+        interface = SW4 f0/2
+    [[NOTE 38]]
+        text = "f0/2"
+        x = 39.2685781216
+        y = -43.7193387468
+        interface = SW2 f0/2
+    [[NOTE 39]]
+        text = "f0/0"
+        x = 78.9531083226
+        y = -17.8580448867
+        interface = SW2 f0/0
+    [[NOTE 40]]
+        text = "f0/0"
+        x = 82.2191260755
+        y = 21.0527430655
+        interface = SPC-4 f0/0
+    [[NOTE 41]]
+        text = "f0/8"
+        x = 73.7689111643
+        y = -30.747724348
+        interface = SW1 f0/8
+    [[NOTE 42]]
+        text = "f0/7"
+        x = -13.9849571046
+        y = -60.96678497
+        interface = SW1 f0/7
+    [[NOTE 43]]
+        text = "f0/3"
+        x = 47.7238638299
+        y = 53.6504445439
+        interface = SW1 f0/3
+    [[NOTE 44]]
+        text = "f0/2"
+        x = -59.0168866692
+        y = 23.9967510267
+        interface = SW1 f0/2
+    [[NOTE 45]]
+        text = "f0/1"
+        x = 80.5521761088
+        y = 32.5502570824
+        interface = SW1 f0/1
+    [[NOTE 46]]
+        text = "f0/0"
+        x = 75.3418556139
+        y = 51.7721784351
+        interface = SPC-5 f0/0
+    [[NOTE 47]]
+        text = "f0/0"
+        x = -9.3755143408
+        y = 49.8580448867
+        interface = SW1 f0/0
+    [[NOTE 48]]
+        text = "f0/6"
+        x = -65.1910637913
+        y = -28.0660018386
+        interface = SW1 f0/6
+    [[NOTE 49]]
+        text = "f0/0"
+        x = 65.1291353356
+        y = 21.0611873087
+        interface = SPC-3 f0/0
+    [[NOTE 50]]
+        text = "f0/0"
+        x = 41.7956376269
+        y = -31.1608754461
+        interface = MPC-1 f0/0
+    [[NOTE 51]]
+        text = "f0/0"
+        x = 28.6847623267
+        y = -30.4111305949
+        interface = HPC-2 f0/0
+    [[NOTE 52]]
+        text = "f0/0"
+        x = 33.4679863954
+        y = 62.8690322864
+        interface = SPC-2 f0/0
+    [[NOTE 53]]
+        text = "f0/0"
+        x = 73.4394794141
+        y = 38.9496194036
+        interface = SPC-6 f0/0
+    [[NOTE 54]]
+        text = "f0/0"
+        x = 10.0274865255
+        y = -27.219672388
+        interface = EPC-4 f0/0
+    [[NOTE 55]]
+        text = "f0/0"
+        x = 56.0455266005
+        y = -23.0867277184
+        interface = MPC-2 f0/0
+    [[NOTE 56]]
+        text = "f0/0"
+        x = 42.9832273711
+        y = -28.4483879612
+        interface = HPC-1 f0/0
+    [[NOTE 57]]
+        text = "f0/0"
+        x = 26.8777307863
+        y = 66.1928241886
+        interface = SPC-1 f0/0
+    [[NOTE 58]]
+        text = "f0/0"
+        x = -71.1791444623
+        y = 7.59500673286
+        interface = APC-1 f0/0
+    [[NOTE 59]]
+        text = "f0/0"
+        x = -13.2122767701
+        y = -17.97164396
+        interface = EPC-2 f0/0
+    [[NOTE 60]]
+        text = "f0/0"
+        x = -11.0419971097
+        y = -22.2383669557
+        interface = EPC-3 f0/0
+    [[NOTE 61]]
+        text = "f0/0"
+        x = -49.8600188511
+        y = -5.35805990741
+        interface = EPC-1 f0/0
+    [[NOTE 62]]
+        text = "f0/0"
+        x = -79.6737826714
+        y = 21.2350555458
+        interface = APC-2 f0/0
+    [[NOTE 63]]
+        text = "f1/0"
+        x = 11.7294627422
+        y = -35.5164706343
+        interface = IVR f1/0
+    [[NOTE 64]]
+        text = "s0/2"
+        x = 2.83595003701
+        y = -34.1408535562
+        interface = ISP-3 s0/2
+    [[NOTE 65]]
+        text = "f1/0"
+        x = 8.9551490177
+        y = 45.9892280569
+        interface = ISP-3 f1/0
+    [[NOTE 66]]
+        text = "s0/1"
+        x = 38.036342861
+        y = -33.6411311401
+        interface = ISP-2 s0/1
+    [[NOTE 67]]
+        text = "f1/0"
+        x = 46.9248066496
+        y = 56.2946044241
+        interface = ISP-2 f1/0
+    [[NOTE 68]]
+        text = "s0/0"
+        x = 74.4408852351
+        y = -22.9936720143
+        interface = ISP-1 s0/0
+    [[NOTE 69]]
+        text = "f1/0"
+        x = 17.0537702991
+        y = 56.1091597112
+        interface = ISP-1 f1/0
+    [[SHAPE 1]]
+        type = rectangle
+        x = -245.852180966
+        y = 298.043157873
+        width = 375.0
+        height = 253.850377188
+    [[SHAPE 2]]
+        type = rectangle
+        x = -208.887969909
+        y = -502.956842127
+        width = 708.152482296
+        height = 217.0
+        border_color = "#000000"
+        border_style = 2
+    [[SHAPE 3]]
+        type = rectangle
+        x = -785.015639749
+        y = 165.966014835
+        width = 395.0
+        height = 193.0
+    [[SHAPE 4]]
+        type = rectangle
+        x = -882.715338419
+        y = -360.999098111
+        width = 567.0
+        height = 437.809023094
+    [[SHAPE 5]]
+        type = rectangle
+        x = 464.232331001
+        y = 58.3186467461
+        width = 406.280152136
+        height = 246.034887054
+    [[SHAPE 6]]
+        type = rectangle
+        x = 431.0
+        y = -172.0
+        width = 272.0
+        height = 184.0
